@@ -96,6 +96,40 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", "Helvetica","Montserrat", sans-se
 }
 
 .fa {font-size:50px;}  
+  
+  
+/* body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+} */
+  
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
 </style>
 <!--*******************************************************************************-->
 <body class="w3-black">
@@ -182,6 +216,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", "Helvetica","Montserrat", sans-se
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesRMUr22LhPNVc_SFKu0PD9VxkXtw5yxqv0jWnBxkBdVYxMg/viewform?embedded=true" width="330" height="430" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 <iframe height="430" width="750" src="https://www.youtube.com/embed/NsxpWFoVlvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<!--**************@@@@@@@@@@@@@********************-->
+<div class="typewriter">
+  <h1>The cat and the hat.</h1>
+</div> 
+<!--**************@@@@@@@@@@@@@********************-->
+  
 <!--Footer Section -->
 
 <div class="row">
