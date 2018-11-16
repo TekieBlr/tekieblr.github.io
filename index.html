@@ -16,6 +16,46 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", "Helvetica","Montserrat", sans-se
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+.flip-card {
+  background-color: transparent;
+  width: 445px;
+  height: 210px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #000000;
+  color: white;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color: #FF7F50;
+  color: white;
+  transform: rotateY(180deg);
+  z-index: 1;
+} 
 </style>
 <body class="w3-black">
  <h2>Zenefits ODC WiKi for Altimetrik Employees</h2>
@@ -53,6 +93,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", "Helvetica","Montserrat", sans-se
   </div>
 </div> -->
 
+<div class="flip-card">
+  <div class="flip-card-inner">  
+    <div class="flip-card-front">
+      <div class="w3-card-4" style="width:100%">
+         <header class="w3-container w3-light-grey">
+         <h3>Meet Zeny</h3>
+         <!-- Developer : Aritro Mukherjee --> 
+         </header>
+         <div class="w3-container">
+         <img src="https://37l6no3yibdh3i9pro2isljk-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/oie_30144137iJGmGE90.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:210px">
+         <p>Hi, I'm Zeny. Your personal assistant.<br />
+          I'm here to help you with all your queries.<br /></p>
+      </div>
+    </div>
+  </div>
+    <div class="flip-card-back">
+      <h3>Ask me...</h3> 
+      <p1>"How to apply for leave?"</p1><br /> 
+      <p1>"How to raise a ticket?"</p1><br /> 
+	  <p1>"How to get online courses?"</p1><br /> 
+      <p1>"What are the mandatory courses I need to complete?"</p1><br /> 
+      <p1>"Can I take my Mac home?"</p1><br /> <br />
+      <p1>Feel free to interact...</p1><br />
+      <p1>If i miss out on any question, let me know!</p1>
+    </div>
+  </div>
+</div>
+ 
+ 
+ 
 <iframe
     allow="microphone;"
     width="350"
