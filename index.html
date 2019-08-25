@@ -1,284 +1,36 @@
 <!DOCTYPE html>
-<html>
-<title>Talk to Zeny</title>
-<!-- Developer : Aritro Mukherjee --> 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Arial", "Helvetica","Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-.flip-card {
-  background-color: transparent;
-  width: 445px;
-  height: 210px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #000000;
-  color: white;
-  z-index: 2;
-}
-
-.flip-card-back {
-  background-color: #000000;
-  color: white;
-  transform: rotateY(180deg);
-  z-index: 1;
-} 
-
-  
-* {
-  box-sizing: border-box;
-}
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 5px;
-}
-
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
-  padding: 16px;
-  text-align: center;
-  background-color: #000000;
-  color: white;
-}
-
-.fa {font-size:50px;}  
-  
-  
-/* body {
-  background: #333;
-  padding-top: 5em;
-  display: flex;
-  justify-content: center;
-} */
-  
-/* DEMO-SPECIFIC STYLES */
-.typewriter h1 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: green }
-}
-</style>
-<!--*******************************************************************************-->  
-<body class="w3-black">
- <h2>Zenefits ODC WiKi for Altimetrik Employees</h2>
-<div class="w3-display-topright">
-  <a href="https://apac01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fo365altimetrik.sharepoint.com%2FPages%2FDefault.aspx&data=02%7C01%7C%7C25f82e4f1195444ba5e208d6495f1413%7Ce9cb3c8041564c39a7fe68fe427a3d46%7C0%7C0%7C636777070087432231&sdata=aHQAoXeA26KTC9VrDajP26RPsdimc3AHA8lQCrINenA%3D&reserved=0" class="w3-button w3-black w3-round-xxlarge">Altimetrik Coral</a>
-  <a href="https://o365altimetrik.sharepoint.com/sites/Atlas/Pages/hr.aspx" class="w3-button w3-black w3-round-xxlarge">Policies</a>
-  <a href="https://lms.altimetrik.com/" class="w3-button w3-black w3-round-xxlarge">LMS</a>
-  <a href="https://apac01.safelinks.protection.outlook.com/?url=http%3A%2F%2Faltimetrik.myemploywise.com%2F&data=02%7C01%7C%7C816fbdd290944a08b9f308d6486a721d%7Ce9cb3c8041564c39a7fe68fe427a3d46%7C0%7C0%7C636776019386931591&sdata=yEE1IQLSt1KF8iCCxyf4rSWb%2BvUEp8XEtSUNmyzeIh0%3D&reserved=0" class="w3-button w3-black w3-round-xxlarge">EmployWise</a>
-  <a href="https://altimetrik.udemy.com/" class="w3-button w3-black w3-round-xxlarge">Udemy</a>
-  <a href="https://helpdesk.altimetrik.com/" class="w3-button w3-black w3-round-xxlarge">Helpdesk</a>
-  <a href="https://fed.altimetrik.com/adfs/portal/updatepassword" class="w3-button w3-black w3-round-xxlarge">PWD</a>
-  <a href="http://rogerdudler.github.io/git-guide/" class="w3-button w3-black w3-round-xxlarge">Git Guide</a>
- </br>
-<!--  <img src=" https://wdc.objectstorage.softlayer.net/v1/AUTH_7046a6f4-79b7-4c6c-bdb7-6f68e920f6e5/Code-Tutorials/watson_assistant_with_voice_capabilities_android/images/watson.gif" alt="Avatar" style=width="445" height="150"> -->
- <iframe width="445" height="230" src="https://www.youtube.com/embed/xWLJhacVjS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<!--  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fzenefits&tabs=timeline&width=305&height=230&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="445" height="230" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.8761028071885!2d77.66139231455051!3d12.851277990934877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c9a22a38169%3A0x2d0a6d0abbb972b2!2sAltimetrik+India+Private+Limited!5e0!3m2!1sen!2sin!4v1542291344673" width="305" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
-</div>
-<!--  <div class="w3-container">
-  <div class="w3-card-4" style="width:30%">
-    <header class="w3-container w3-light-grey">
-      <h3>Meet Zeny (Beta: Voice Enabled)</h3>
-    </header>
-    <div class="w3-container">
-      <img src="https://37l6no3yibdh3i9pro2isljk-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/oie_30144137iJGmGE90.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:150px">
-      <p>Hi, I'm Zeny. <br />
-      I'm here to assist you with:<br /></p>
-  		<li>Leaves</li>
- 		<li>Work From Home</li>    
-      <br>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Giorgi Tsereteli</title>
+</head>
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <i class="fas fa-code fa-5x white"></i>
+            <h2>FirstName LastName</h2>
+            <p>City,Country.</p>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quas sint et nihil iusto eius nostrum sit error, repellat optio quisquam! Magnam dolore iusto cumque. Nostrum error iste neque maiores.</p>
+            <h2>Skills</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa asperiores. At.</p>
+            <h2>Projects</h2>
+            <a href="#">Project 1</a>
+            <a href="#">Project 2</a>
+            <a href="#">Project 3</a>
+            <a href="#">Project 4</a>
+            <a href="#">Project 5</a>
+            <h2>Contact</h2>
+            <p>myEmail@email.com</p>
+        </div>
     </div>
-  </div>
-</div> -->
-<!--*******************************************************************************-->
-<div class="flip-card">
-  <div class="flip-card-inner">  
-    <div class="flip-card-front">
-      <div class="w3-card-4" style="width:100%">
-         <header class="w3-container w3-light-grey">
-         <h3>Meet Zeny</h3>
-         <!-- Developer : Aritro Mukherjee --> 
-         </header>
-         <div class="w3-container">
-         <img src="https://37l6no3yibdh3i9pro2isljk-wpengine.netdna-ssl.com/wp-content/uploads/2017/09/oie_30144137iJGmGE90.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:210px">
-         <h2>Hi,</h2>
-          <p>I'm here to help you<br /> 
-          with all your queries.<br /></p>
-      </div>
-    </div>
-  </div>
-    <div class="flip-card-back">
-      <h3>Ask me...</h3> 
-      <p1>"How to apply for leave?"</p1><br /> 
-      <p1>"How to raise a ticket?"</p1><br /> 
-      <p1>"How to get online courses?"</p1><br /> 
-      <p1>"What are the mandatory courses I need to complete?"</p1><br /> 
-      <p1>"Can I take my Mac home?"</p1><br />
-      <p1><i>Feel free to interact...</i></p1><br />
-      <p1><i>If i miss out on any question, let me know!</i></p1>
-    </div>
-  </div>
-</div>
-
-<!-- <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-        <img src="https://cdn.dribbble.com/users/32512/screenshots/3299759/3rokid_ai_product_by_gleb.gif" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:445px">       
-    </div>
-    <div class="flip-card-back">
-      <h1>Ideate</h1> 
-      <h1>Nurture</h1> 
-      <h1>Kindle</h1> 
-    </div>
-  </div>
-</div>  -->
-<!--*******************************************************************************-->
- 
-<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/5230a427-5818-4c29-85c5-23af35e14f6e">
-</iframe>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesRMUr22LhPNVc_SFKu0PD9VxkXtw5yxqv0jWnBxkBdVYxMg/viewform?embedded=true" width="330" height="430" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-<iframe height="430" width="745" src="https://www.youtube.com/embed/NsxpWFoVlvg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!--**************@@@@@@@@@@@@@********************-->
-<div class="typewriter">
-  <h1>EAT SLEEP $CODE REPEAT!!</h1>
-</div> 
-<!--**************@@@@@@@@@@@@@********************-->
-  
-<!--Footer Section -->
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <p><i class="fa fa-user"></i></p>
-      <h3>18+</h3>
-      <p>Engineers</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <p><i class="fa fa-check"></i></p>
-      <h3>5+</h3>
-      <p>Projects</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <p><i class="fa fa-smile-o"></i></p>
-      <h3>20+</h3>
-      <p>Positive Feedbacks</p>
-    </div>
-  </div>
-  
-  <div class="column">
-    <div class="card">
-      <p><i class="fa fa-coffee"></i></p>
-      <h3>100+</h3>
-      <p>Meetings</p>
-    </div>
-  </div>
-</div>
-<!--COMMENT BOX STARTS -->
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://tekieblr.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>  
-<!--COMMENT BOX ENDS -->  
 </body>
 </html>
